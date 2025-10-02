@@ -1,12 +1,7 @@
 import pageTitle from 'ember-page-title/helpers/page-title';
-import WelcomePage from 'ember-welcome-page/components/welcome-page';
 
 <template>
-  {{pageTitle "Newrituals"}}
+  {{pageTitle "New Rituals"}}
 
-  {{outlet}}
-
-  {{! The following component displays Ember's default welcome message. }}
-  <WelcomePage />
-  {{! Feel free to remove this! }}
+  <h1>New Rituals</h1>
 </template>

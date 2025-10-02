@@ -15,11 +15,14 @@ module.exports = function (defaults) {
     },
     'ember-cli-babel': { enableTypeScriptTransform: true },
 
-    // Add options here
+    prember: {
+      urls: ['/'],
+    },
   });
 
   const { Webpack } = require('@embroider/webpack');
-  return require('@embroider/compat').compatBuild(app, Webpack, {
+
+  const compiledApp = require('@embroider/compat').compatBuild(app, Webpack, {
     staticAddonTestSupportTrees: true,
     staticAddonTrees: true,
     staticEmberSource: true,
@@ -30,4 +33,5 @@ module.exports = function (defaults) {
       },
     ],
   });
+  return require('prember').prerender(app, compiledApp);
 };
