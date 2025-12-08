@@ -1,5 +1,4 @@
 import Component from '@glimmer/component';
-import { fn } from '@ember/helper';
 
 function iconEquals(iconId: string, id: string) {
   return iconId === id;

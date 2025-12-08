@@ -1,10 +1,5 @@
 import Component from '@glimmer/component';
-import { fn } from '@ember/helper';
 import SocialLink from './social-link';
-
-function iconEquals(iconId: string, id: string) {
-  return iconId === id;
-}
 
 export default class FooterComponent extends Component {
   get year() {
