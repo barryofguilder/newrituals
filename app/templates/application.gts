@@ -15,7 +15,7 @@ import Player from '../components/player';
     />
 
     <Player
-      class="mx-auto px-8 pt-16 w-full h-[370px] sm:w-[500px] sm:h-[340px]"
+      class="mx-auto px-8 pt-16 w-full h-[400px] sm:w-[500px] sm:h-[375px]"
     />
   </main>
 
