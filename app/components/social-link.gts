@@ -50,7 +50,7 @@ export default class SocialLinkComponent extends Component {
   <template>
     <a
       href={{this.icon.url}}
-      class="text-white hover:text-gray-400 focus:text-gray-600 focus:outline-none"
+      class="hover:text-gray-400 focus:text-gray-600 focus:outline-none"
     >
       {{#if (iconEquals this.icon.id "apple")}}
         <svg

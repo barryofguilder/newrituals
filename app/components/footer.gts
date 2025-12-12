@@ -1,14 +1,16 @@
 import Component from '@glimmer/component';
 import SocialLink from './social-link';
 
-export default class FooterComponent extends Component {
+export default class FooterComponent extends Component<{
+  Element: HTMLFooterElement;
+}> {
   get year() {
     return new Date().getFullYear();
   }
 
   <template>
-    <footer class="p-8 flex flex-col gap-8">
-      <ul class="text-center text-sm text-white">
+    <footer class="flex flex-col gap-8" ...attributes>
+      <ul class="text-center text-sm">
         <li>Jason Barry - Bass</li>
         <li>Keller Harbin - Vocals</li>
         <li>Drew Miller - Drums</li>
@@ -26,7 +28,7 @@ export default class FooterComponent extends Component {
       </div>
 
       <div
-        class="flex flex-col items-center justify-center text-sm text-gray-300 sm:flex-row"
+        class="flex flex-col items-center justify-center text-sm sm:flex-row"
       >
         <span>
           Copyright ©

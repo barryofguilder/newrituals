@@ -6,7 +6,7 @@ const PlayerComponent: TOC<{
   <iframe
     title="Welcome To The End by New Rituals"
     class="border-none"
-    src="https://bandcamp.com/EmbeddedPlayer/album=1111269633/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/"
+    src="https://bandcamp.com/EmbeddedPlayer/album=1111269633/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
     seamless
     ...attributes
   >

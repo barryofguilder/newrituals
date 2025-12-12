@@ -9,16 +9,15 @@ import Player from '../components/player';
     <h1 class="sr-only">New Rituals</h1>
 
     <img
-      src="/images/new-rituals.jpg"
-      alt=""
-      class="w-screen h-auto object-contain [@media(min-width:858px)]:h-screen [@media(min-width:858px)]:w-auto [@media(min-width:858px)]:mx-auto"
+      src="/images/ep-banner.png"
+      alt="New EP out now!"
+      class="max-h-screen mx-auto"
     />
 
-    <div class="flex flex-col items-center px-8 pt-8 gap-2">
-      <h2 class="text-white text-lg sm:text-2xl font-bold">Listen to our new EP!</h2>
-      <Player class="w-full sm:w-[450px] h-[335px] md:h-[310px]" />
-    </div>
+    <Player
+      class="mx-auto px-8 pt-16 w-full h-[370px] sm:w-[500px] sm:h-[340px]"
+    />
   </main>
 
-  <Footer />
+  <Footer class="p-8 pt-16" />
 </template>
