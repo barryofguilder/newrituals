@@ -14,7 +14,7 @@ export default class SocialLinkComponent extends Component {
     {
       id: 'bandcamp',
       name: 'Bandcamp',
-      url: 'https://newritualshc.bandcamp.com/album/welcome-to-the-end',
+      url: 'https://newritualshc.bandcamp.com',
     },
     {
       id: 'facebook',
