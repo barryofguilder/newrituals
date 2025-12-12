@@ -9,7 +9,7 @@ import Player from '../components/player';
     <h1 class="sr-only">New Rituals</h1>
 
     <img
-      src="/images/ep-banner.png"
+      src="/images/ep-banner-focused.png"
       alt="New EP out now!"
       class="max-h-screen mx-auto"
     />
