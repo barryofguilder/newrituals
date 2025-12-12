@@ -22,6 +22,7 @@ export default class FooterComponent extends Component {
         <SocialLink @icon="youtube" />
         <SocialLink @icon="apple" />
         <SocialLink @icon="spotify" />
+        <SocialLink @icon="bandcamp" />
       </div>
 
       <div
