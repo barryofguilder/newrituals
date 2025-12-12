@@ -21,9 +21,9 @@ export default class FooterComponent extends Component<{
       <div class="flex items-center justify-center space-x-4">
         <SocialLink @icon="instagram" />
         <SocialLink @icon="facebook" />
-        <SocialLink @icon="youtube" />
-        <SocialLink @icon="apple" />
-        <SocialLink @icon="spotify" />
+        {{! <SocialLink @icon="youtube" /> }}
+        {{! <SocialLink @icon="apple" /> }}
+        {{! <SocialLink @icon="spotify" /> }}
         <SocialLink @icon="bandcamp" />
       </div>
 
