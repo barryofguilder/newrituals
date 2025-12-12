@@ -14,12 +14,12 @@ export default class SocialLinkComponent extends Component {
     {
       id: 'facebook',
       name: 'Facebook',
-      url: '#',
+      url: 'https://www.facebook.com/newritualshc',
     },
     {
       id: 'instagram',
       name: 'Instagram',
-      url: 'https://www.instagram.com/newritualshc/',
+      url: 'https://www.instagram.com/newritualshc',
     },
     {
       id: 'spotify',
