@@ -29,7 +29,7 @@ export default class SocialLinkComponent extends Component {
     {
       id: 'spotify',
       name: 'Spotify',
-      url: '#',
+      url: 'https://open.spotify.com/artist/2PvUDH6Wflkm7wGRbpmR1H',
     },
     {
       id: 'twitter',
