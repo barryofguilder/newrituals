@@ -9,7 +9,7 @@ export default class SocialLinkComponent extends Component {
     {
       id: 'apple',
       name: 'Apple Music',
-      url: '#',
+      url: 'https://music.apple.com/us/artist/new-rituals/1873400847',
     },
     {
       id: 'bandcamp',
