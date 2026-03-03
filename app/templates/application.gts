@@ -1,6 +1,7 @@
 import pageTitle from 'ember-page-title/helpers/page-title';
 import Footer from '../components/footer';
 import Player from '../components/player';
+import Shows from '../components/shows';
 
 <template>
   {{pageTitle "New Rituals"}}
@@ -24,6 +25,16 @@ import Player from '../components/player';
       <Player
         class="mx-auto px-8 pt-16 w-full h-[400px] sm:w-[500px] sm:h-[375px]"
       />
+
+      <div class="pt-16 mx-auto max-w-lg">
+        <h2
+          class="text-center text-2xl uppercase font-semibold tracking-wider border-b"
+        >
+          Shows
+        </h2>
+
+        <Shows class="mt-4" @shows={{@model}} />
+      </div>
     </main>
 
     <Footer class="p-8 pt-16" />
