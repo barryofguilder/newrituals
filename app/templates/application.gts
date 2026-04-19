@@ -33,7 +33,7 @@ import Shows from '../components/shows';
           Shows
         </h2>
 
-        <Shows class="mt-4" @shows={{@model}} />
+        <Shows class="mt-4 px-4" @shows={{@model}} />
       </div>
     </main>
 

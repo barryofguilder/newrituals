@@ -29,14 +29,17 @@ class ShowItem extends Component<ShowItemSignature> {
         <span class="font-semibold">
           {{this.formattedDate}}
         </span>
-        <span class="flex flex-col text-gray-400 sm:flex-row">
+        <span class="flex flex-col text-center text-gray-400 sm:flex-row">
           <span>{{@show.city}}</span>
           <span class="hidden sm:block sm:pl-2">@</span>
-          <span class="sm:pl-2">{{@show.venue}}</span>
+          <span class="sm:pl-2">
+            <span class="inline sm:hidden">@</span>
+            {{@show.venue}}
+          </span>
         </span>
 
         {{#if @show.with}}
-          <span class="text-gray-400">
+          <span class="text-gray-400 text-center">
             w/
             {{@show.with}}
           </span>
