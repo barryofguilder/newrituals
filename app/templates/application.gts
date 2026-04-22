@@ -1,6 +1,7 @@
 import pageTitle from 'ember-page-title/helpers/page-title';
 import Footer from '../components/footer';
 import Player from '../components/player';
+import SectionHeader from '../components/section-header';
 import Shows from '../components/shows';
 
 <template>
@@ -22,21 +23,66 @@ import Shows from '../components/shows';
         class="max-h-screen mx-auto"
       />
 
-      <Player
-        class="mx-auto px-8 pt-16 w-full h-[400px] sm:w-[500px] sm:h-[375px]"
-      />
+      <div class="pt-24 mx-auto max-w-3xl px-8">
+        <SectionHeader>Music</SectionHeader>
 
-      <div class="pt-16 mx-auto max-w-lg">
-        <h2
-          class="text-center text-2xl uppercase font-semibold tracking-wider border-b"
+        <Player
+          class="mx-auto mt-10 w-full h-[400px] sm:w-[500px] sm:h-[375px]"
+        />
+      </div>
+
+      <div class="mt-24 bg-black/40">
+        <div class="py-24 mx-auto max-w-3xl">
+          <SectionHeader>Shows</SectionHeader>
+
+          <Shows class="mt-10 px-4 max-w-lg mx-auto" @shows={{@model}} />
+        </div>
+      </div>
+
+      <div class="py-24 mx-auto max-w-3xl text-center">
+        <SectionHeader>Merch</SectionHeader>
+
+        <a
+          href="https://newrituals.square.site"
+          class="block mt-10 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-[#0e1c29]"
         >
-          Shows
-        </h2>
+          {{#let
+            "w-4/5 flex-shrink-0 sm:w-auto rounded hover:scale-105 transition-transform duration-200"
+            as |shirtClass|
+          }}
+            <div
+              class="flex overflow-x-auto gap-3 sm:grid sm:grid-cols-3 sm:overflow-visible"
+            >
+              <img
+                src="/images/shirt-ernest.webp"
+                alt="Ernest Saves Hardcore"
+                class={{shirtClass}}
+              />
+              <img
+                src="/images/shirt-logo.webp"
+                alt="New Rituals Welcome To The End"
+                class={{shirtClass}}
+              />
+              <img
+                src="/images/shirt-planets.webp"
+                alt="Planets long sleeve"
+                class={{shirtClass}}
+              />
+            </div>
+          {{/let}}
+        </a>
 
-        <Shows class="mt-4 px-4" @shows={{@model}} />
+        <a
+          href="https://newrituals.square.site"
+          class="inline-block mt-6 px-8 py-3 bg-[#f2f2f2] text-[#0e1c29] text-sm uppercase tracking-widest font-semibold hover:bg-white transition-colors focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+        >
+          Shop Now
+        </a>
       </div>
     </main>
 
-    <Footer class="p-8 pt-16" />
+    <Footer
+      class="px-8 pt-24 pb-12 bg-gradient-to-b from-transparent to-black/60"
+    />
   </div>
 </template>

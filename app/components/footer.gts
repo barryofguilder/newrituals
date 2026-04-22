@@ -10,7 +10,13 @@ export default class FooterComponent extends Component<{
 
   <template>
     <footer class="flex flex-col gap-8" ...attributes>
-      <ul class="text-center text-sm">
+      <img
+        src="/images/new-rituals-logo-transparent.png"
+        alt="New Rituals"
+        class="mx-auto h-24"
+      />
+
+      <ul class="text-center text-sm -mt-4">
         <li>Jason Barry - Bass</li>
         <li>Keller Harbin - Vocals</li>
         <li>Drew Miller - Drums</li>
@@ -18,7 +24,7 @@ export default class FooterComponent extends Component<{
         <li>Zak Towe - Guitar</li>
       </ul>
 
-      <div class="flex items-center justify-center space-x-4">
+      <div class="flex items-center justify-center space-x-4 mt-4">
         <SocialLink @icon="instagram" />
         <SocialLink @icon="facebook" />
         {{! <SocialLink @icon="youtube" /> }}
