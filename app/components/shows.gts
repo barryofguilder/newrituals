@@ -26,10 +26,10 @@ class ShowItem extends Component<ShowItemSignature> {
   <template>
     <div class="flex grow items-center">
       <div class="text-md flex grow flex-col items-center">
-        <span class="font-semibold">
+        <span class="font-semibold uppercase tracking-wider">
           {{this.formattedDate}}
         </span>
-        <span class="flex flex-col text-center text-gray-400 sm:flex-row">
+        <span class="flex flex-col text-center text-gray-300 sm:flex-row">
           <span>{{@show.city}}</span>
           <span class="hidden sm:block sm:pl-2">@</span>
           <span class="sm:pl-2">
@@ -48,7 +48,7 @@ class ShowItem extends Component<ShowItemSignature> {
         {{#if @show.ticketLink}}
           <a
             href={{@show.ticketLink}}
-            class="inline-block rounded bg-gray-200 mt-2 px-2 py-1 text-xs font-semibold focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-white text-gray-900 shadow-sm hover:bg-gray-300"
+            class="inline-block mt-2 px-2 py-1 text-xs font-semibold uppercase tracking-widest bg-[#f2f2f2] text-[#0e1c29] hover:bg-white transition-colors focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-white [text-shadow:none]"
           >
             Tickets
           </a>

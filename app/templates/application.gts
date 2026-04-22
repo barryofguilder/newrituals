@@ -31,12 +31,12 @@ import Shows from '../components/shows';
         />
       </div>
 
-      <div class="mt-24 bg-black/40">
-        <div class="py-24 mx-auto max-w-3xl">
-          <SectionHeader>Shows</SectionHeader>
+      <div
+        class="pt-24 mx-auto max-w-3xl [text-shadow:0_2px_12px_rgba(0,0,0,1)]"
+      >
+        <SectionHeader>Shows</SectionHeader>
 
-          <Shows class="mt-10 px-4 max-w-lg mx-auto" @shows={{@model}} />
-        </div>
+        <Shows class="mt-10 px-4 max-w-lg mx-auto" @shows={{@model}} />
       </div>
 
       <div class="py-24 mx-auto max-w-3xl text-center">
