@@ -10,7 +10,11 @@ export default class FooterComponent extends Component<{
 
   <template>
     <footer class="flex flex-col gap-8" ...attributes>
-      <img src="/images/new-rituals-logo-transparent.png" alt="New Rituals" class="mx-auto h-24" />
+      <img
+        src="/images/new-rituals-logo-transparent.png"
+        alt="New Rituals"
+        class="mx-auto h-24"
+      />
 
       <ul class="text-center text-sm -mt-4">
         <li>Jason Barry - Bass</li>

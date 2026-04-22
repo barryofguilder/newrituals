@@ -81,6 +81,8 @@ import Shows from '../components/shows';
       </div>
     </main>
 
-    <Footer class="px-8 pt-24 pb-12 bg-gradient-to-b from-transparent to-black/60" />
+    <Footer
+      class="px-8 pt-24 pb-12 bg-gradient-to-b from-transparent to-black/60"
+    />
   </div>
 </template>
