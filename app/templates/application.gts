@@ -23,11 +23,11 @@ import Shows from '../components/shows';
         class="max-h-screen mx-auto"
       />
 
-      <div class="pt-24 mx-auto max-w-3xl px-8">
+      <div class="pt-24 mx-auto max-w-3xl">
         <SectionHeader>Music</SectionHeader>
 
         <Player
-          class="mx-auto mt-10 w-full h-[400px] sm:w-[500px] sm:h-[375px]"
+          class="mx-auto mt-10 px-8 w-full h-[400px] sm:w-[500px] sm:h-[375px]"
         />
       </div>
 
